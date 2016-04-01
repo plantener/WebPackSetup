@@ -43,7 +43,7 @@
     "test": "node --max-old-space-size=4096 node_modules/karma/bin/karma start",
     "ci": "npm run e2e && npm run test",
     "docs": "npm run typedoc -- --options typedoc.json --exclude '**/*.spec.ts' ./src/",
-    "start": "npm run server:dev",
+    "start": "npm run build:prod",
     "start:hmr": "npm run server:dev:hmr",
     "postinstall": "npm run typings -- install",
     "preversion": "npm test",
