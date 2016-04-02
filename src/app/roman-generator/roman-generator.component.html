@@ -4,13 +4,14 @@
       <!-- Left content -->
     </div>
     <div class="col-md-6">
-      Some content goes here
       <form>
         <fieldset class="form-group">
-          <label for="inputNumber">Number</label>
-          <input type="number" class="form-control" id="inputNumber" placeholder="Enter number...">
+          <label for="inputNumber">Decimal number</label>
+          <input type="number" class="form-control" id="inputNumber" [(ngModel)]="decimalNumber" placeholder="Enter decimal number..." autofocus>
         </fieldset>
       </form>
+      =
+      <label>{{decimalNumber}}</label>
     </div>
     <div class="col-md-3">
     </div>
