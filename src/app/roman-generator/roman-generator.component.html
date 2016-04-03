@@ -7,11 +7,11 @@
       <form>
         <fieldset class="form-group">
           <label for="inputNumber">Decimal number</label>
-          <input type="number" class="form-control" id="inputNumber" [(ngModel)]="decimalNumber" placeholder="Enter decimal number..." autofocus>
+          <input type="number" class="form-control" id="inputNumber" [ngFormControl]="decimalNumberControl" placeholder="Enter decimal number..." autofocus>
         </fieldset>
       </form>
       =
-      <label>{{decimalNumber}}</label>
+      <label>{{romanNumber}}</label>
     </div>
     <div class="col-md-3">
     </div>
