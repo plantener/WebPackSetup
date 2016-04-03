@@ -61,14 +61,21 @@ import {RouterActive} from './router-active';
       <router-outlet></router-outlet>
     </main>
 
-    <footer>
-      WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a>
-      <div>
-        <img [src]="angularclassLogo" width="10%">
+    <footer class="container">
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+        WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a>
+        <div>
+          <img [src]="angularclassLogo" width="10%">
+        </div>
+        <pre>this.appState.state = {{ appState.state | json }}</pre>
+      </div>
+      <div class="col-md-4">
+      </div>
       </div>
     </footer>
-
-    <pre>this.appState.state = {{ appState.state | json }}</pre>
   `
 })
 @RouteConfig([
