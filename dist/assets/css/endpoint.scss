@@ -1,0 +1,14 @@
+// Should be split into several scss files and imported here
+
+$bg-image-path: '../assets/img/meeting_room01.jpg';
+
+body{
+  background: url($bg-image-path);
+  background-color: yellow;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+//  background-position: top;
+  //background-repeat: no-repeat;
+  background-size: cover;
+}
