@@ -2,8 +2,7 @@
 # The humans responsible & technology colophon
 
 # TEAM
-
-  <name> -- <role> -- <twitter>
+Jesper Plantener -- Software engineer -- @JesperPlantener
 
 # THANKS
 

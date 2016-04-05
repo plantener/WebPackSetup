@@ -38,6 +38,9 @@ import {RouterActive} from './router-active';
   `],
   template: `
     <header>
+    <div class="ribbon-wrapper">
+      <div class="ribbon">Ju1ceBox</div>
+    </div>
       <nav>
         <h1>Hello {{ name }}</h1>
         <ul>
