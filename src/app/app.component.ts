@@ -18,68 +18,8 @@ import {RouterActive} from './router-active';
   pipes: [ ],
   providers: [ ],
   directives: [ RouterActive ],
-  styles: [`
-    h1 {
-      font-family: Arial, Helvetica, sans-serif
-    }
-    nav ul {
-      display: inline;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 60px;
-    }
-    nav li {
-      display: inline;
-    }
-    nav li.active {
-      background-color: lightgray;
-    }
-  `],
-  template: `
-    <header>
-    <div class="ribbon-wrapper">
-      <div class="ribbon">Ju1ceBox</div>
-    </div>
-      <nav>
-        <h1>Hello {{ name }}</h1>
-        <ul>
-          <li router-active>
-            <a [routerLink]=" ['Index'] ">Index</a>
-          </li>
-          <li router-active>
-            <a [routerLink]=" ['Home'] ">Home</a>
-          </li>
-          <li router-active>
-            <a [routerLink]=" ['About'] ">About</a>
-          </li>
-          <li router-active>
-            <a [routerLink]=" ['Roman Generator'] ">Roman Generator</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-
-    <footer class="container">
-    <div class="row">
-      <div class="col-md-4">
-      </div>
-      <div class="col-md-4">
-        WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a>
-        <div>
-          <img [src]="angularclassLogo" width="10%">
-        </div>
-        <pre>this.appState.state = {{ appState.state | json }}</pre>
-      </div>
-      <div class="col-md-4">
-      </div>
-      </div>
-    </footer>
-  `
+  styles: [],
+  template: require('./app.component.html')
 })
 @RouteConfig([
   { path: '/',      name: 'Index', component: Home, useAsDefault: true },

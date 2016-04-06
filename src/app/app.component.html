@@ -1,0 +1,41 @@
+<header>
+  <div class="ribbon-wrapper">
+    <div class="ribbon">Ju1ceBox</div>
+  </div>
+  <nav class="navbar navbar-light pull-xs-right">
+    <ul class="nav navbar-nav">
+      <li class="nav-item" router-active>
+        <a class="nav-link" [routerLink]=" ['Index'] ">Index</a>
+      </li>
+      <li class="nav-item" router-active>
+        <a class="nav-link" [routerLink]=" ['Home'] ">Home</a>
+      </li>
+      <li class="nav-item" router-active>
+        <a class="nav-link" [routerLink]=" ['About'] ">About</a>
+      </li>
+      <li class="nav-item" router-active>
+        <a class="nav-link" [routerLink]=" ['Roman Generator'] ">Roman Generator</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="container">
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a>
+      <div>
+        <img [src]="angularclassLogo" width="10%">
+      </div>
+      <pre>this.appState.state = {{ appState.state | json }}</pre>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+</footer>

@@ -1,16 +1,37 @@
 // Should be split into several scss files and imported here
-
 $bg-image-path: '../assets/img/meeting_room01.jpg';
+
+
+$wallpaper-yellow: rgba(229,203,57,1);
+
+// navbar
+$nav-border-thickness: 5px;
+$nav-font-family: Lato;
+$nav-font-weight: 700;
 
 body{
   background: url($bg-image-path);
-  background-color: yellow;
+  background-color: $wallpaper-yellow;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
 //  background-position: top;
   //background-repeat: no-repeat;
   background-size: cover;
+}
+.navbar{
+  font-family: $nav-font-family;
+  font-weight: $nav-font-weight;
+}
+.navbar-nav .nav-link{
+  padding-top: 0;
+}
+
+.nav-item{
+  border-top: $nav-border-thickness solid transparent;
+  &.active{
+  border-top: $nav-border-thickness solid $wallpaper-yellow;
+  }
 }
 
 .ribbon-wrapper {
@@ -27,7 +48,7 @@ body{
 
   .ribbon {
     transform: rotate(-45deg);
-    background-color: rgba(229,203,57,1);
+    background-color: $wallpaper-yellow;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
     color: black;
     font-size: 1.5rem;
