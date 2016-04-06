@@ -23,15 +23,15 @@ body{
   font-family: $nav-font-family;
   font-weight: $nav-font-weight;
 }
-.navbar-nav .nav-link{
-  padding-top: 0;
-}
 
-.nav-item{
-  border-top: $nav-border-thickness solid transparent;
-  &.active{
-  border-top: $nav-border-thickness solid $wallpaper-yellow;
-  }
+// .nav-item{
+//   border-top: $nav-border-thickness solid transparent;
+//   &.active{
+//   border-top: $nav-border-thickness solid $wallpaper-yellow;
+//   }
+// }
+.nav-item.active::first-letter{
+  color: $wallpaper-yellow;
 }
 
 .ribbon-wrapper {
