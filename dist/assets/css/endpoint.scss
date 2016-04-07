@@ -11,7 +11,6 @@ $nav-font-weight: 700;
 
 body{
   background: url($bg-image-path);
-  background-color: $wallpaper-yellow;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -22,16 +21,19 @@ body{
 .navbar{
   font-family: $nav-font-family;
   font-weight: $nav-font-weight;
-}
-.navbar-nav .nav-link{
-  padding-top: 0;
+  font-size: 1.15rem;
 }
 
 .nav-item{
-  border-top: $nav-border-thickness solid transparent;
-  &.active{
-  border-top: $nav-border-thickness solid $wallpaper-yellow;
-  }
+  // border-bottom: 1px dotted $navbar-light-color;
+  // &.active{
+  //   border-bottom: 1px dotted $wallpaper-yellow;
+  //
+  // }
+}
+
+.nav-item.active::first-letter{
+  color: $wallpaper-yellow;
 }
 
 .ribbon-wrapper {
